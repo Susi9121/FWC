@@ -1,17 +1,13 @@
 module helloworldfpga(
-
-    input  wire U,
-    input  wire V,
-    input  wire W,
+    input A,
+    input B,
+    output wire r,
+);
+    reg r.g;
+    always@(A,B)
+        begin
+            r=(!A&&B) || (!B&&A);
+            
     
-    output wire F,
-    );
-     assign U=1;
-     assign V=0;
-     assign W=0;
-    
-    always @(*)
-    begin
-   F=((U&V)|(U&!W)); 
     end
     endmodule
